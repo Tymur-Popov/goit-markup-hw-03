@@ -331,7 +331,20 @@ li {
   background: var(--team-back-color);
 }
 
+.team-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.team-point {
+  display: block;
+  border: solid 1px tomato;
+}
+
 .team-header {
+  display: inline-block;
+  margin-bottom: 50px;
+
   font-weight: var(--font-weight-secondary);
   font-size: 36px;
   line-height: 1.16;
@@ -340,7 +353,17 @@ li {
   color: var(--main-font-color);
 }
 
+.member-box {
+  display: flex;
+  flex-direction: column;
+
+  padding-bottom: 30px;
+}
+
 .team-member {
+  display: inline-block;
+  margin-top: 30px;
+
   font-size: 16px;
   font-weight: var(--font-weight-member);
   line-height: 1.18;
@@ -349,6 +372,10 @@ li {
 }
 
 .member-description {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: ;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
