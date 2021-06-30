@@ -316,6 +316,17 @@ li {
 /* TASKS END */
 
 /* TEAM */
+.team-list {
+  display: flex;
+}
+
+.team-point {
+  display: block;
+}
+.team-point:not(last-child) {
+  margin-right: 30px;
+}
+
 .team {
   background: var(--team-back-color);
 }
