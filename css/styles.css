@@ -1,15 +1,15 @@
 :root {
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
-  --logo-icon-color-left: #2196f3;
-  --logo-icon-color-right: #ffffff;
-  --accent-color: #2196f3;
-  --footer-accent-color: #ffffff;
   --font-weight-main: 500;
   --font-weight-secondary: bold;
   --font-weight-p: 400;
   --font-weight-member: 500;
 
+  --logo-icon-color-left: #2196f3;
+  --logo-icon-color-right: #ffffff;
+  --accent-color: #2196f3;
+  --footer-accent-color: #ffffff;
   --main-font-color: #212121;
   --header-info-color: #757575;
   --hero-background-color: #2f303a;
@@ -24,6 +24,8 @@
   --filter-accent-font-color: #ffffff;
   --footer-main-color: rgba(255, 255, 255, 0.6);
 }
+
+/* СБРОС СТИЛЕЙ */
 
 h1,
 h2,
@@ -42,6 +44,12 @@ ul {
   padding-bottom: 0;
   padding-left: 0;
 }
+
+img {
+  display: block;
+}
+
+/* СБРОС СТИЛЕЙ END */
 
 body {
   font-family: var(--main-font);
@@ -74,12 +82,10 @@ li {
 /* HEADER */
 
 .container {
-  box-sizing: border-box;
+  margin: 0 auto;
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  /* padding-left: 15px;
-  padding-right: 15px; */
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .section {
@@ -104,6 +110,7 @@ li {
 
 .info-list {
   display: flex;
+  margin-left: auto;
 }
 
 .info-point:not(:last-child) {
@@ -136,7 +143,6 @@ li {
 .menu-section {
   display: flex;
   width: 294px;
-  margin-right: 305px;
 }
 
 .menu-link {
@@ -241,7 +247,7 @@ li {
 
 /* OUR QUALITIES */
 
-.qualities-section {
+.qualities {
   display: flex;
   margin-top: 104px;
 }
@@ -322,7 +328,11 @@ li {
 
 .team-point {
   display: block;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
+
 .team-point:not(last-child) {
   margin-right: 30px;
 }
@@ -334,11 +344,6 @@ li {
 .team-section {
   display: flex;
   flex-direction: column;
-}
-
-.team-point {
-  display: block;
-  border: solid 1px tomato;
 }
 
 .team-header {
@@ -374,7 +379,6 @@ li {
 .member-description {
   display: inline-block;
   margin-top: 10px;
-  margin-bottom: ;
 
   font-weight: 400;
   font-size: 16px;
@@ -387,9 +391,23 @@ li {
 
 /* FOOTER */
 
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer {
   background-color: var(--footer-back-color);
 }
+
+.logo-footer {
+  width: 145px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
 .logo-icon-right {
   color: var(--logo-icon-color-right);
 }
@@ -419,6 +437,11 @@ li {
 .footer-mail:focus,
 .footer-tel:focus {
   color: var(--footer-accent-color);
+}
+
+.adress li:not(:last-child) {
+  margin-bottom: 9px;
+  margin-right: auto;
 }
 /* FOOER END */
 
@@ -466,6 +489,7 @@ li {
 .portfolio-point {
   display: block;
   width: 370px;
+  border: 1px solid #eeeeee;
 }
 
 .portfolio-point:not(:nth-child(3n + 3)) {
