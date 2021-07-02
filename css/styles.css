@@ -43,6 +43,7 @@ ul {
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 0;
+  margin: 0 0;
 }
 
 img {
@@ -93,6 +94,11 @@ li {
   padding-bottom: 94px;
 }
 
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 /* УТИЛИТЫ END */
 
 /* HEADER SECTION */
@@ -133,8 +139,8 @@ li {
   text-decoration: none;
 
   margin-right: 93px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo-icon-color {
@@ -204,7 +210,6 @@ li {
   flex-direction: column;
   padding-top: 200px;
   padding-bottom: 200px;
-  width: 1600px;
   height: 600px;
   align-items: center;
   justify-content: center;
@@ -255,7 +260,6 @@ li {
 
 .qualities {
   display: flex;
-  margin-top: 104px;
 }
 
 .qualities-list {
@@ -296,10 +300,11 @@ li {
 .tasks-section {
   display: flex;
   flex-direction: column;
+  padding-top: 0;
 }
 
 .tasks-header {
-  display: inline-block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
@@ -367,13 +372,12 @@ li {
 .member-box {
   display: flex;
   flex-direction: column;
-
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
 .team-member {
   display: inline-block;
-  margin-top: 30px;
 
   font-size: 16px;
   font-weight: var(--font-weight-member);
@@ -459,10 +463,9 @@ li {
   display: flex;
   justify-content: center;
   margin-top: 0;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 16px;
 }
 
 .filter-section .filter-point:not(:last-child) {
