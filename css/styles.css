@@ -205,17 +205,20 @@ li {
 /* HEADER END */
 
 /* HERO */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--hero-background-color);
+}
+
 .hero-section {
   display: flex;
   flex-direction: column;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  height: 600px;
+
   align-items: center;
   justify-content: center;
-
-  background-color: var(--hero-background-color);
 }
+
 .hero-header {
   display: inline-block;
   font-family: var(--main-font);
